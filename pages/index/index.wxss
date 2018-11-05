@@ -19,3 +19,5 @@
 .usermotto {
   margin-top: 200px;
 }
+/* @import "https://images.51fengxun.cn/game/ldjzk/css/game.css"; */
+@import "../../app.wxss";
