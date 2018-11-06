@@ -1,7 +1,12 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/checkpoint_list/list",
+    "pages/checkpoint_show/show",
+    "pages/question_show/show",
+    "pages/user_login/login",
+    "pages/user_rank/rank",
+    "pages/user_setting/setting",
+    "pages/user_tool/tool"
   ],
   "window":{
     "backgroundTextStyle":"light",
