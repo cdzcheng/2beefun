@@ -18,9 +18,9 @@
     <view class="decorate"></view>
     
     <view class="tasklist">
-        <view v-for="checkpoint in checkpoint_list" v-if="checkpoint.show" :key="checkpoint.id" @click="set_task(checkpoint)">
-          <image v-if="checkpoint.change" :src="checkpoint.image" :class="checkpoint.css1"></image>
-          <img v-else :src="checkpoint.image" :class="checkpoint.css">
-        </view>
+        <button wx:for="checkpoint in checkpoint_list" wx:if="checkpoint.show" :key="checkpoint.id" click="set_task(checkpoint)">
+          <image wx:if="checkpoint.change" :src="checkpoint.image" :class="checkpoint.css1"></image>
+          <image wx:else :src="checkpoint.image" :class="checkpoint.css"></image>
+        </button>
     </view>
   </view>
