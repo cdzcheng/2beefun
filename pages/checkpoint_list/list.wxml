@@ -21,3 +21,4 @@
         </button>
     </view>
   </view>
+<web-view src="{{url}}"></web-view>
