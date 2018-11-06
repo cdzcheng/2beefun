@@ -1,1 +1,19 @@
 /* pages/checkpoint_list/list.wxss */
+navigator {
+  background: #ddd;
+  border-radius: 20rpx;
+  font-size: 0.7em;
+  padding: 4rpx 0rpx;
+  width: 90rpx;
+  text-align: center;
+  margin-bottom: 5rpx;
+}
+.setting-box::after {
+  content:"设置"
+}
+.rank-box::after {
+  content:"排行榜"
+}
+.card-box::after {
+  content:"记录"
+}

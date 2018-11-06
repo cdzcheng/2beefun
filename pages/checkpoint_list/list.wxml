@@ -3,15 +3,12 @@
       <!--项目名称-->
       <text></text>
     </view>
-    <router-link to="/user/setting" class="setting-box">
+    <navigator url="/pages/user_setting/setting" class="setting-box"></navigator>
       <!--设置-->
-    </router-link>
-    <router-link to="/user/rank" class="rank-box">
+    <navigator url="/pages/user_setting/rank" class="rank-box"></navigator>
       <!--排行榜-->
-    </router-link>
-    <router-link to="/user/tools" class="card-box">
-      <!--道具卡-->
-    </router-link>
+    <navigator url="/pages/user_setting/tool" class="card-box"></navigator>
+      <!--记录-->
     <view id="product-sec-countdown" class="time-box"></view>
       <!--计时器-->
     
