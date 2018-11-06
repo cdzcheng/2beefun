@@ -1,2 +1,26 @@
-<!--pages/checkpoint_list/list.wxml-->
-<text>pages/checkpoint_list/list.wxml</text>
+<view class="main-page">
+    <view class="main-title-box">
+      <!--项目名称-->
+      <text></text>
+    </view>
+    <router-link to="/user/setting" class="setting-box">
+      <!--设置-->
+    </router-link>
+    <router-link to="/user/rank" class="rank-box">
+      <!--排行榜-->
+    </router-link>
+    <router-link to="/user/tools" class="card-box">
+      <!--道具卡-->
+    </router-link>
+    <view id="product-sec-countdown" class="time-box"></view>
+      <!--计时器-->
+    
+    <view class="decorate"></view>
+    
+    <view class="tasklist">
+        <view v-for="checkpoint in checkpoint_list" v-if="checkpoint.show" :key="checkpoint.id" @click="set_task(checkpoint)">
+          <image v-if="checkpoint.change" :src="checkpoint.image" :class="checkpoint.css1"></image>
+          <img v-else :src="checkpoint.image" :class="checkpoint.css">
+        </view>
+    </view>
+  </view>
